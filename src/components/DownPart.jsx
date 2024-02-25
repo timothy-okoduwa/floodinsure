@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const DownPart = () => {
   return (
@@ -10,7 +11,9 @@ const DownPart = () => {
           </div>
           <div className="start">Start getting weather forecast today</div>
           <div className="mt-3 pb-4 d-flex justify-content-center w-100">
-            <button className="request3">Request Demo</button>
+            <Link to="/hero" style={{ textDecoration: 'none' }}>
+              <button className="request3">Request Demo</button>
+            </Link>
           </div>
         </div>
         <div className="mt-5 tshit">

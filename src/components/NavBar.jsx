@@ -39,7 +39,9 @@ const NavBar = () => {
                   </Link>
                 </div>
                 <div>
-                  <button className="request">Request Demo</button>
+                  <Link to="/hero" style={{ textDecoration: 'none' }}>
+                    <button className="request">Request Demo</button>
+                  </Link>
                 </div>
               </div>
             </Nav>

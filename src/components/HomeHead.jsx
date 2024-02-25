@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomeHead = () => {
   return (
@@ -17,7 +18,9 @@ const HomeHead = () => {
             policies.
           </div>
           <div className="mt-4">
-            <button className="request2">Request Demo</button>
+            <Link to="/hero" style={{ textDecoration: 'none' }}>
+              <button className="request2">Request Demo</button>
+            </Link>
           </div>
         </div>
       </div>
