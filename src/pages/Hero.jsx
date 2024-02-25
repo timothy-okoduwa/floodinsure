@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Hero = () => {
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleLogin = () => {
+    // Perform your login logic here
+    // For demonstration purposes, let's assume the login fails
+    setErrorMessage('Your request has been sent to the Admin.');
+    // Clear the error message after 10 seconds
+    setTimeout(() => {
+      setErrorMessage('');
+    }, 6000);
+  };
   return (
     <div className="raiseddd2">
       <div className="container pt-5">
@@ -20,6 +31,9 @@ const Hero = () => {
           <div className="col-12 col-lg-6 mb-5">
             <div>
               <div className="dem">Request Demo</div>
+              {errorMessage && (
+                <div className="error-message">{errorMessage}</div>
+              )}
               <div className="mt-5">
                 <div className="row">
                   <div className="col-12 col-lg-6 mb-5">
@@ -95,7 +109,9 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="col-12 col-lg-6">
-                    <button className="request5">Submit</button>
+                    <button className="request5" onClick={handleLogin}>
+                      Submit
+                    </button>
                   </div>
                 </div>
               </div>

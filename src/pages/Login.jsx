@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Login = () => {
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleLogin = () => {
+    // Perform your login logic here
+    // For demonstration purposes, let's assume the login fails
+    setErrorMessage('Incorrect email or password. Please try again.');
+    // Clear the error message after 10 seconds
+    setTimeout(() => {
+      setErrorMessage('');
+    }, 6000);
+  };
   return (
     <div className="raiseddd">
       <div className="sallll">
         <div className="wellcome">Welcome back!</div>
         <div className="loggg">Login to floodInsure</div>
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
         <div className="mt-4">
           <div className="mb-4">
             <div className="labell mb-2">Email</div>
@@ -46,7 +58,9 @@ const Login = () => {
             </div>
           </div>
           <div className="mt-5">
-            <button className="request4">Submit</button>
+            <button className="request4" onClick={handleLogin}>
+              Submit
+            </button>
           </div>
         </div>
       </div>

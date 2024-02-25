@@ -16,9 +16,7 @@ const DownPart = () => {
             </Link>
           </div>
         </div>
-        <div className="mt-5 tshit">
-          © 2024 UPSTATION Innovation Center. All right reserved
-        </div>
+        <div className="mt-5 tshit">2024 Emergence Hub. All right reserved</div>
       </div>
     </div>
   );
