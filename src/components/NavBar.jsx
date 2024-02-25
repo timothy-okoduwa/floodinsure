@@ -4,14 +4,28 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import f from '../images/food.svg';
+import { Link, useLocation } from 'react-router-dom';
+
 const NavBar = () => {
+  const location = useLocation();
+
+  // Check if the current route is "/login"
+  const isLoginPage = location.pathname === '/login';
+
+  // Render the Navbar only if not on the "/login" route
+  if (isLoginPage) {
+    return null; // Return null to render nothing
+  }
+
   return (
     <div>
       <Navbar expand="lg" className="hello">
         <Container>
           <Navbar.Brand>
             <div>
-              <img src={f} alt="" />
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <img src={f} alt="" />
+              </Link>
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,7 +33,10 @@ const NavBar = () => {
             <Nav className="me-auto w-100">
               <div className="first">
                 <div>
-                  <button className="login">Login</button>
+                  <Link to="/login" style={{ textDecoration: 'none' }}>
+                    {' '}
+                    <button className="login">Login</button>
+                  </Link>
                 </div>
                 <div>
                   <button className="request">Request Demo</button>
