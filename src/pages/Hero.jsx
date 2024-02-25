@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="raiseddd2">
       <div className="container pt-5">
         <div className="row">
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 mb-5">
             <div>
               <div className="partyyy">
                 Lets <span className="unlockk">unlock</span> parametric flood
@@ -17,7 +17,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 mb-5">
             <div>
               <div className="dem">Request Demo</div>
               <div className="mt-5">
@@ -72,6 +72,30 @@ const Hero = () => {
                         className="wellijg"
                       />
                     </div>
+                  </div>
+                  <div className="col-12 col-lg-6 mb-5">
+                    <div className="labell mb-2">Phone number</div>
+                    <div class="">
+                      <input
+                        type="tel"
+                        placeholder="Enter phone number"
+                        class="wellijg"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-12  mb-4">
+                    <div className="labell mb-2">Country</div>
+                    <div className="">
+                      <select class="wellijg">
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="IvoryCoast">Ivory Coast</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="col-12 col-lg-6">
+                    <button className="request5">Submit</button>
                   </div>
                 </div>
               </div>
