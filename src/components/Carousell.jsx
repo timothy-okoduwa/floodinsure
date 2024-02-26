@@ -1,5 +1,7 @@
 import React from 'react';
 import f from '../images/flood.png';
+import c from '../images/c22.png';
+import e from '../images/c33.jpg';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 const Carousell = () => {
@@ -38,7 +40,7 @@ const Carousell = () => {
               </div>
               <div className="col-12 col-lg-6 mb-4">
                 <div className="roundedd">
-                  <img src={f} alt="" />
+                  <img src={c} alt="" />
                 </div>
               </div>
             </div>
@@ -55,7 +57,7 @@ const Carousell = () => {
               </div>
               <div className="col-12 col-lg-6 mb-4">
                 <div className="roundedd">
-                  <img src={f} alt="" />
+                  <img src={e} alt="" />
                 </div>
               </div>
             </div>
