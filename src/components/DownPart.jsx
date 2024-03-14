@@ -16,7 +16,7 @@ const DownPart = () => {
             </Link>
           </div>
         </div>
-        <div className="mt-5 tshit">2024 Emergence Hub. All right reserved</div>
+        <div className="mt-5 tshit">2024 FloodInsure. All right reserved</div>
       </div>
     </div>
   );
